@@ -1,7 +1,7 @@
-A simple rest template in Node.js with Express.js.\
+## A simple rest template in Node.js with Express.js.\
 &nbsp;
 
-Run server:
+## Run server:
 
 ```
 npx nodemon main.js

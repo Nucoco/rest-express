@@ -8,7 +8,6 @@ const cors = require("cors");
 const router = require("./routes");
 
 // Literals
-const DB_PATH = "db/database.sqlite3";
 const API_ROOT = "/api";
 const PORT = process.env.port || process.env.PORT || 5000;
 

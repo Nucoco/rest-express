@@ -21,8 +21,8 @@ exports.getUsers = (req, res, next) => {
 
 exports.createUser = (req, res, next) => {
 	// implements like below
-	const { id, name, text } = req.body;
-	const newUser = new user.User(id, name, text);
+	const { name, email, password } = req.body;
+	const newUser = new user.User(name, email, password);
 
 	// TODO: db access
 

@@ -5,7 +5,8 @@ const sqlite3 = require("sqlite3");
 const cors = require("cors");
 
 // Modules within project
-const router = require("./routes");
+const taskRouter = require("./routes/tasks");
+const userRouter = require("./routes/users");
 
 // Literals
 const API_ROOT = "/api";
@@ -17,8 +18,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
 
-// Register the rooter
-app.use(API_ROOT, router);
+// Register rooters
+app.use(`${API_ROOT}/tasks`, taskRouter);
+app.use(`${API_ROOT}/users`, userRouter);
 
 // Error handling
 app.use((err, req, res, next) => {

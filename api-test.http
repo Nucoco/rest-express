@@ -1,0 +1,25 @@
+###
+GET http://localhost:5000/tasks/
+
+###
+POST http://localhost:5000/tasks/
+Content-Type: application/json
+
+{
+	"id": "id-sample",
+  "name": "name-sample",
+  "text": "text-sample"
+}
+
+###
+PATCH http://localhost:5000/tasks/patch/1
+Content-Type: application/json
+
+{
+	"id": "id-sample",
+  "name": "name-sample",
+  "text": "text-sample"
+}
+
+###
+DELETE http://localhost:5000/tasks/delete/1
